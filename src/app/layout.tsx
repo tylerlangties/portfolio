@@ -3,6 +3,7 @@ import { Plus_Jakarta_Sans } from "next/font/google";
 import { AppRouterCacheProvider } from "@mui/material-nextjs/v15-appRouter";
 import Providers from "@/components/Providers";
 import { getSiteUrl } from "@/siteUrl";
+import { SpeedInsights } from "@vercel/speed-insights/next"
 import "./globals.css";
 
 const plusJakarta = Plus_Jakarta_Sans({
@@ -76,6 +77,7 @@ export default function RootLayout({
   return (
     <html lang="en" className={plusJakarta.variable}>
       <body className={plusJakarta.className}>
+        <SpeedInsights />
         {/* MUI App Router SSR cache provider */}
         <AppRouterCacheProvider options={{ enableCssLayer: true }}>
           <Providers>{children}</Providers>
