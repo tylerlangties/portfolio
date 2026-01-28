@@ -15,7 +15,7 @@ export default function HomePage() {
     <Shell>
       <Stack spacing={{ xs: 5, md: 7 }}>
         {/* Hero with subtle visual */}
-        <Box sx={{ position: "relative" }}>
+        <Box sx={{ position: "relative", overflowX: "clip" }}>
           {/* Subtle gradient orbs — decorative only */}
           <Box
             aria-hidden
@@ -142,7 +142,7 @@ export default function HomePage() {
               textDecoration: "none",
               color: "inherit",
               position: "relative",
-              borderRadius: 3,
+              borderRadius: "24px",
               overflow: "hidden",
               // Gradient border via wrapper (1px padding = border; inner radius 1px less so corners match sides)
               background:
@@ -190,19 +190,6 @@ export default function HomePage() {
                     color: "primary.light",
                   }}
                 />
-                {currentWork.comingSoon && (
-                  <Chip
-                    label="Coming soon"
-                    size="small"
-                    sx={{
-                      fontWeight: 600,
-                      letterSpacing: "0.02em",
-                      background: "rgba(250, 250, 250, 0.06)",
-                      border: "1px solid rgba(250, 250, 250, 0.12)",
-                      color: "text.secondary",
-                    }}
-                  />
-                )}
                 <Typography
                   variant="h5"
                   sx={{
@@ -245,6 +232,19 @@ export default function HomePage() {
                     }}
                   />
                 ))}
+                {currentWork.comingSoon && (
+                  <Chip
+                    label="Coming soon"
+                    size="small"
+                    sx={{
+                      fontWeight: 600,
+                      letterSpacing: "0.02em",
+                      background: "rgba(250, 250, 250, 0.06)",
+                      border: "1px solid rgba(250, 250, 250, 0.12)",
+                      color: "text.secondary",
+                    }}
+                  />
+                )}
               </Stack>
               <Typography
                 variant="body2"
