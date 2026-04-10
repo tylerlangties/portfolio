@@ -16,7 +16,8 @@ const projects = [
     description:
       "Local events aggregator with structured categories, venue matching, and a modern UI for locals/tourists.",
     stack: ["Next.js", "TypeScript", "FastAPI", "Postgres", "Celery"],
-    href: "#",
+    href: "https://srqhappenings.com/",
+    code: "https://github.com/tylerlangties/srq-hpn",
     comingSoon: true,
   },
 ];
@@ -125,7 +126,7 @@ export default function ProjectsPage() {
                       </Button>
                       <Button
                         variant="outlined"
-                        href={p.href}
+                        href={p.code}
                         size="small"
                         sx={{
                           minHeight: 44,

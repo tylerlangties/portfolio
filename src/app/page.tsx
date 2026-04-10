@@ -7,6 +7,7 @@ const currentWork = {
     "Local events aggregator with structured categories, venue matching, and a modern UI for locals and tourists.",
   stack: ["Next.js", "TypeScript", "FastAPI", "Postgres", "Celery"],
   href: "/projects",
+  code: "https://github.com/tylerlangties/srq-hpn",
   comingSoon: true,
 };
 
