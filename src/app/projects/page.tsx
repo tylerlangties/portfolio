@@ -18,7 +18,7 @@ const projects = [
     stack: ["Next.js", "TypeScript", "FastAPI", "Postgres", "Celery"],
     href: "https://srqhappenings.com/",
     code: "https://github.com/tylerlangties/srq-hpn",
-    comingSoon: true,
+    comingSoon: false,
   },
 ];
 
